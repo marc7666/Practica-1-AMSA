@@ -1,0 +1,17 @@
+Algunes opcions del camp de configuració de /etc/fstab
+
+· auto => El SF serà montat automaticament durant l'arranc o quan s'invoqui mount -a
+·
+·
+·
+·
+·
+·
+·
+·
+·
+·
+·
+·
+·
+·
