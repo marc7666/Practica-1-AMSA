@@ -1,13 +1,13 @@
 Algunes opcions del camp de configuració de /etc/fstab
 
 · auto => El SF serà montat automaticament durant l'arranc o quan s'invoqui mount -a
-·
-·
-·
-·
-·
-·
-·
+· noauto => El SF no serà montat automaticament, nomes quan se li ordeni manualment
+· exec => permet l'execució de binaris residents en el SF
+· noexec => No permet l'execució de binaris residents en el SF
+· ro => Monta el SF en moed lectura
+· rw => Monta el sistema de fitxers en mode escriptura
+· user => Permet a qualsevol usuari montar el SF. Aquesta opció inclou noexec, nosuid, nodev, a no ser que s'indiqui el contrari.
+· users => 
 ·
 ·
 ·
