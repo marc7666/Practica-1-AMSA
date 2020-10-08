@@ -7,7 +7,7 @@ Algunes opcions del camp de configuració de /etc/fstab
 · ro => Monta el SF en moed lectura
 · rw => Monta el sistema de fitxers en mode escriptura
 · user => Permet a qualsevol usuari montar el SF. Aquesta opció inclou noexec, nosuid, nodev, a no ser que s'indiqui el contrari.
-· users => 
+· users => Permet a qualsevol usuari pertinent al grup users montar el SF
 ·
 ·
 ·
