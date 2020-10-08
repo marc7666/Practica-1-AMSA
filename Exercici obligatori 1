@@ -24,7 +24,10 @@ respecte al de l'última modificació. (Similar a noatime, però no interfereix 
 de l'última modificació). Pot augmentar les prestacions
 · discard => Emet les ordres TRIM per a dispositius de blocs subjacents quan s'alliberen els blocs. Recomanat per a utilitzar si el SF es troba en un SSD
 · flush => L'opció vfat permet eliminar dades amb mes freqüència, de manera que els cuadres de diàleg de còpia o les barres de progrés es mantingui fins que s'hagin escrit les dades
-·
-·
-·
-·
+· nofail => Monta el dispositiu quan està present, però ignora la seva absència. Això evita que es cometin errors durant l'arranc per als mitjans extraíbles
+· defaults => Assigna les opcions de montatge predetermiandes que seràn utilitzades per el SF. Les opcions predeterminades per a ext4 son: rw, suid, dev, exec, auto, nouser, async
+· uid => Indica a qui pertanyen els fitxers de la partició.
+· gid => Similar al anterior pero referent algrup d'usuaris
+· fmask => Es tracta del umask per als fitxers de la partició, aixi podrem especificar els permisos que tindran els fitxers
+· dmask => Es el mateix que l'anterior però amb els directoris.
+· utf8 => Ho posarem si la codificació dels noms es utf8, en cas d'utilitzar una altra configuració posarem l'opció corresponent
