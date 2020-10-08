@@ -8,9 +8,22 @@ Algunes opcions del camp de configuració de /etc/fstab
 · rw => Monta el sistema de fitxers en mode escriptura
 · user => Permet a qualsevol usuari montar el SF. Aquesta opció inclou noexec, nosuid, nodev, a no ser que s'indiqui el contrari.
 · users => Permet a qualsevol usuari pertinent al grup users montar el SF
-·
-·
-·
+· nouser => Nomes el usuari root pot montar el SF
+· owner => Permet al propietari del dispositiu montar el SF
+· sync => Tot I/O s'ha de fer de manera sincrònica
+· async => Tot I/O s'ha de fer de manera asincrònica
+· dev => Intèrpret dels dispositius especials o de bloc del SF
+· nodev => Impedeix la interpretació dels dispositius especials o de blocs del SF
+· suid => Permet les operacions de suid i sgid bits. S'utilitza principalment per permetre als usuaris comuns executar binaris amb privilegis concedits temporalment amb la
+finalitat de realitzar una tasca específica
+· nosuid => Bloqueja el funcionament de suid i sgid bits
+· noatime => No actualitza l'inode amb el temps d'accés a filesystem. Pot augmentar les prestacions
+· nodiratime => No actualitza l'inode dels directoris amb el temps d'accés a filesystem. Pot augmentar les prestacions
+· relatime => Actualitza en l'inode nomes els temps relatius a modificacions o canvis en els arxius. Els temps d'accés venen actualitzats nomes si l'últim accés és anterior
+respecte al de l'última modificació. (Similar a noatime, però no interfereix amb programes com mutt o altres aplicacions que han de conèixer si un arxiu ha estat llegit després
+de l'última modificació). Pot augmentar les prestacions
+· discard => Emet les ordres TRIM per a dispositius de blocs subjacents quan s'alliberen els blocs. Recomanat per a utilitzar si el SF es troba en un SSD
+· flush => L'opció vfat permet eliminar dades amb mes freqüència, de manera que els cuadres de diàleg de còpia o les barres de progrés es mantingui fins que s'hagin escrit les dades
 ·
 ·
 ·
