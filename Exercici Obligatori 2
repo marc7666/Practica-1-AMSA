@@ -1,0 +1,14 @@
+boot=/dev/hda #Localització del MBR o boot block
+prompt #Carregar menú d'imatges
+timeout=150 #Esperar 15 segons abans de carregar la imatge per defecte
+default=Ubuntu #Ubuntu es carregarà per defecte
+image=/boot/vmlinuz-4.10.0-9-generic #La imatge d'Ubuntu 4.10.0
+      label=Ubuntu #Nom de la imatge
+      root=/dev/hda3 #Partició que es montarà com a root
+      read-only #Mode sol de lectura
+image=/boot/vmlinuz-2.6.7 #La imatge d'Ubuntu 2.6.7
+      label=Ubuntu-vell #Nom de la imatge
+      root=/dev/hda2 #Partició que es montarà com a root
+      read-only #Mode sol de lectura
+other=/dev/hda1 #Un altre sistema operatiu, Windows
+      label=Windows
